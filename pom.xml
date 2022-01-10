@@ -30,14 +30,15 @@
 <!--JSR Java Spesification Requests-->
 
 		<!-- for JSR -->
-		<dependency>
+		<!--<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>8.0.1</version>
+			<version>7.0</version>
 			<scope>provided</scope>
 		</dependency>
+		-->
 
-		<!--for jsp tomcat-->
+        <!-- for jsp tomcat-->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
