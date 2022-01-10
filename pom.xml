@@ -20,6 +20,9 @@
 
 	<!-- Pom.xml declare(degisken)-->
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.target>16</maven.compiler.target>
+		<maven.compiler.source>16</maven.compiler.source>
 		<java.version>16</java.version>
 	</properties>
 
@@ -27,8 +30,23 @@
 	<!-- kutuphanaler -->
 	<dependencies>
 
-<!--JSR Java Spesification Requests-->
+         <!--CDI-->
+		<!--<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>2.0.SP1</version>
+			<scope>provided</scope>
+		</dependency>-->
 
+          <!-- JSF -->
+		<!--<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>-->
+
+       <!--JSR Java Spesification Requests-->
 		<!-- for JSR -->
 		<!--<dependency>
 			<groupId>javax</groupId>

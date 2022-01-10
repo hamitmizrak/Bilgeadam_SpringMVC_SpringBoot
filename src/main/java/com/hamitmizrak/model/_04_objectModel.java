@@ -13,10 +13,10 @@ public class _04_objectModel {
     //return : sayfaya redirect
     @GetMapping("/studentjsp")
     public String getObject( Model model){
-        StudentDto studentDto=new StudentDto();
-        studentDto.setStudentId(44);
-        studentDto.setStudentName("Hamit");
-        studentDto.setStudentSurname("Mızrak");
+        StudentDto studentDto=StudentDto.
+                builder()
+                .studentId(44).studentName("Hamit").studentSurname("Mızrak")
+                .build();
 
         //key-value
         model.addAttribute("message","Uzak diyarlardan geldim modelden");
