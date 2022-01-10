@@ -7,12 +7,19 @@
 <head>
     <meta charset="utf-8">
     <title>Merhabalar Jsp</title>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-<h1 >Merhabalar Object JSP </h1>
-<h2>ID     : ${student_key.studentId} </h2>
-<h2>NAME   : ${student_key.studentName}</h2>
-<h2>SURNAME: ${student_key.studentSurname}</h2>
+
+<ul class="list-group">
+    <li class="list-group-item text-success">Mesaj</li>
+    <li class="list-group-item text-primary">ID:${student_key.studentId}</li>
+    <li class="list-group-item text-primary">NAME:${student_key.studentName}</li>
+    <li class="list-group-item text-primary">SURNAME:${student_key.studentSurname}</li>
+</ul>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 </body>
 </html>
