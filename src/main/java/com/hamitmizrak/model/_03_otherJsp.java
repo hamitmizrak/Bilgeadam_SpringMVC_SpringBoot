@@ -7,7 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class _03_otherJsp {
 
     @GetMapping("/otherpage")
-    public String getJspMethod() {
+    public String getJspMethod1() {
         return "otherfile/other";
     }
+
+    @GetMapping("/other/diffucultPAGE")
+    public String getJspMethod2() {
+        return "otherfile/other";
+    }
+
+
 }
