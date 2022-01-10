@@ -27,7 +27,17 @@
 	<!-- kutuphanaler -->
 	<dependencies>
 
-        <!--for jsp tomcat-->
+<!--JSR Java Spesification Requests-->
+
+		<!-- for JSR -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>8.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!--for jsp tomcat-->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
