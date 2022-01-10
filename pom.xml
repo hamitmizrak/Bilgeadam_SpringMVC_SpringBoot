@@ -23,15 +23,30 @@
 		<java.version>16</java.version>
 	</properties>
 
+<!--Ctrl+Shift+o maven kütüphane eklemek-->
 	<!-- kutuphanaler -->
 	<dependencies>
 
+        <!--for jsp tomcat-->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+
+		<!--for jsp Jstl-->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+       <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 		<!-- Spring Web-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
 		<!-- Actuator -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
