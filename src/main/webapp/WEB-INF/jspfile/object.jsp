@@ -12,7 +12,7 @@
 <body>
 
 <ul class="list-group">
-    <li class="list-group-item text-success">Mesaj</li>
+    <li class="list-group-item text-success">Mesaj ${message}</li>
     <li class="list-group-item text-primary">ID:${student_key.studentId}</li>
     <li class="list-group-item text-primary">NAME:${student_key.studentName}</li>
     <li class="list-group-item text-primary">SURNAME:${student_key.studentSurname}</li>

@@ -19,6 +19,7 @@ public class _04_objectModel {
         studentDto.setStudentSurname("Mızrak");
 
         //key-value
+        model.addAttribute("message","Uzak diyarlardan geldim modelden");
         model.addAttribute("student_key",studentDto);
         return "object";
     }
