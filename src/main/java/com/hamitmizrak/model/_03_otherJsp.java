@@ -15,6 +15,4 @@ public class _03_otherJsp {
     public String getJspMethod2() {
         return "otherfile/other";
     }
-
-
 }
