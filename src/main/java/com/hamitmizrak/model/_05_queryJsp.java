@@ -5,7 +5,10 @@ import com.hamitmizrak.dto.StudentDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.websocket.server.PathParam;
 
 @Controller
 public class _05_queryJsp {
@@ -53,6 +56,15 @@ public class _05_queryJsp {
         model.addAttribute("query_key","Cemil Duman");
         return "_2_query";
     }
+
+    //localhost:8080/altinciuygulama/4
+    @GetMapping("/altinciuygulama/{param1}")
+    public String sixMethod(Model model , @PathVariable(name = "param1") int id44){
+        model.addAttribute("query_key","Gülten Ulukal ID: "+id44);
+        return "_2_query";
+    }
+
+
 
 
 
