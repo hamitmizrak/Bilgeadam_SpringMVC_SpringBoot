@@ -6,15 +6,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.annotation.ManagedBean;
-import javax.faces.bean.SessionScoped;
+//import javax.faces.bean.SessionScoped;
 
 @ManagedBean(value = "bilgeadam_jsf")
-@SessionScoped
-@Data  @AllArgsConstructor @NoArgsConstructor @Builder
+//@SessionScoped
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class JsfClass {
 
-    private String name="Hamit M.";
-
+    private String name = "Hamit M.";
 
 
 }

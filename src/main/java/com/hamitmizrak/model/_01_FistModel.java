@@ -8,11 +8,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class _01_FistModel {
 
     //localhost:8080/ilkuygulama
-    @GetMapping("/ilkuygulama")
+    //ekranda göster
+    @GetMapping("/ilkuygulama44")
     @ResponseBody
-    public String firstMethod(){
+    public String firstMethod() {
         return "En sonunda artık Spring Boooooottttaaaayızzzz .";
     }
+
 
 
 }
