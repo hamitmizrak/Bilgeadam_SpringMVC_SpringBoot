@@ -65,7 +65,19 @@ public class _05_queryJsp {
         return "_2_query";
     }
 
-
+    //eğer opsiyonel olara seçim yapacaksasm olsun yada olmasında burada primitive yerine Wrapper class kullanalım
+    //çünkü Wrapper class null değer alabilir ancak primitive type null alamaz.
+    //Wrapper =Serileştirme yapabiliriz Primitive=Serileştirme yapamayız.
+    //localhost:8080/yedinciuygulama <== veya ==> localhost:8080/yedinciuygulama//77
+    @GetMapping({"yedinciuygulama", "yedinciuygulama/{param2}"}  )
+    public String sevenMethod(Model model, @PathVariable(name="param2",required = false) Long id23){
+        if(id23!=null){
+            model.addAttribute("query_key"," Görkem Sönmez ID: "+id23);
+        }else{
+            model.addAttribute("query_key"," Data Yok ID: ");
+        }
+        return "_2_query";
+    }
 
 
 
