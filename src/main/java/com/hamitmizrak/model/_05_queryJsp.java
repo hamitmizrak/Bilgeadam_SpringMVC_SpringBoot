@@ -57,6 +57,7 @@ public class _05_queryJsp {
         return "_2_query";
     }
 
+    //url yazacağım sayıyı çalıştırmak @PathVariable çalışmasını sağladım
     //localhost:8080/altinciuygulama/4
     @GetMapping("/altinciuygulama/{param1}")
     public String sixMethod(Model model , @PathVariable(name = "param1") int id44){
