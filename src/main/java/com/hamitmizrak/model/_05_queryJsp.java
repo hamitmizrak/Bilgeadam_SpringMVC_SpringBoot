@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.websocket.server.PathParam;
+import java.util.Locale;
 
 @Controller
 public class _05_queryJsp {
@@ -99,6 +100,21 @@ public class _05_queryJsp {
             @RequestParam(name = "param4", required = false, defaultValue = "55") Long sayi) {
 
         model.addAttribute("query_key", "Java Spring Boot" + sayi);
+        return "_2_query";
+    }
+
+
+
+    //localhost:8080/onuncuuygulama?adi=Hamit&soyadi=Mızrak&numara=44
+    @GetMapping("/onuncuuygulama")
+    public String tenMethod(
+            Model model,
+            @RequestParam(name = "adi") String name,
+            @RequestParam(name = "soyadi") String surname,
+            @RequestParam(name="numara",required = false,  defaultValue ="99" ) Long number
+    ){
+        String temp=name.toLowerCase();
+        model.addAttribute("query_key"," Selamlar  "+temp+" soydınız: "+surname+" "+number);
         return "_2_query";
     }
 
