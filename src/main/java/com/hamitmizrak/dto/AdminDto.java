@@ -24,6 +24,7 @@ public class AdminDto implements Serializable {
     public AdminDto() {
         this.adminName="admin adı yazmadınız";
         this.adminSurname="admin soyadı yazmadınız";
+
     }
 
     //parametreli constructur

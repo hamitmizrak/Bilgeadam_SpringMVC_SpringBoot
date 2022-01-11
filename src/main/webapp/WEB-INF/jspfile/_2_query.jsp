@@ -14,7 +14,7 @@
 <h1 class="text-primary display-4">Merhabalar Query</h1>
 
 <ul class="list-group">
-    <li class="list-group-item text-success">Mesaj ${query_key}</li>
+    <li class="list-group-item text-success">Mesaj ${query_key.concat(" Deneme").toUpperCase()}</li>
     <li class="list-group-item text-primary">ADI:    <span class="text-warning">${query_admin.adminName}</span>    </li>
     <li class="list-group-item text-primary">SOYADI:  <span class="text-warning">${query_admin.adminSurname}</span>  </li>
 </ul>
